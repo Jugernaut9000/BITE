@@ -346,6 +346,7 @@ def menu():
     print('''                                 \033[38;5;196mB\033[0masic \033[38;5;196mI\033[0mnteractive \033[38;5;196mT\033[0merminal \033[38;5;196mE\033[0mnvironment
                                           by \033[38;5;18mJugernaut9000\033[0m''')
     print_red('-'*len('                                 Basic Interactive Terminal Environment'))
+    print('\033[38;5;18mDirect link: https://github.com/Jugernaut9000/BITE.git\033[0m')
     print_red(f"Today is:"+' '*(38-len(f'Today is{current_weekday} {current_date} {current_time}'))+f"{current_weekday} {current_date} {current_time}")
     if current_weekday == 'Wednesday':
         print('Its wednesday, my dudes')
