@@ -352,7 +352,7 @@ def menu():
         print('Its wednesday, my dudes')
     print('Type "goat" to see the list of commands ')
 def commands():
-    print_red('-'*w)
+    print_red('MiniScript'+'-'*(w-10))
     print(f'>>> {com1}'+" "*(86-len(f'>>> {com1}'))+'- начать')
     print(f'>>> {com2} <текст>                                                                     - печать <текст>')
     print(f'>>> {com2} -jdi <переменная>                                                           - печать <jdi переменная>')
@@ -367,17 +367,20 @@ def commands():
     print(f'>>> {com12} <слово которое нужно найти> <текст>                                          - найти <слово> в <текст>')
     print(f'>>> {com21} <число1> <число2>                                                          - поделить <число1> на <число2> с остатком')
     print(f'>>> contract if <условие>; <действие1> else; <действие2>                              - при выполнении условия выполняет <действие1> иначе выполняет <действие2>')
+    print_red('Utility'+'-'*(w-7))
     print(f'>>> {com17}'+" "*(86-len(f'>>> {com17}'))+'- запуск файловой системы APEROLFs')
     print(f'>>> warehouse                                                                         - запуск программы WareHouse')
     print(f'>>> defcreator                                                                        - запук программы Defcreator')
     print(f'>>> filefinder                                                                        - запуск программы FileFinder')
     print(f'>>> webber                                                                            - запуск программы Webber')
+    print_red('Files'+'-'*(w-5))
     print(f'>>> fix_ext <имя файла> <новое расширение>                                            - изменить текущее расширение файла')
     print(f'>>> outfold <путь к файлу>                                                            - вытащить файл из папки в которой он находится')
     print(f'>>> infold <путь к файлу> <путь к папке>                                              - добавить файл в папку')
     print(f'>>> {com37}                                                                                - дерево файлов')
     print(f'>>> dl <ссылка> <имя>                                                                 - скачать файл по ссылке и сохранить его под именем <имя>')
     print(f'>>> run_def <имя файла>                                                               - запуск .py файла с подробной работой с функциями')
+    print_red('Os'+'-'*(w-2))
     print(f'>>> {com2} -components'+" "*(86-len(f'>>> {com2} -components'))+'- печать компонентов компьютера')
     print(f'>>> {com2} -usb'+" "*(86-len(f'>>> {com2} -usb'))+'- печать всех подключенных usb устройств ')
     print(f'>>> kt                                                                                - полная очистка терминала')
@@ -390,7 +393,6 @@ def commands():
     print(f'>>> sproc <имя процесса / имя процесса>                                               - поиск процесса по PID или имени процесса')
     print(f'>>> kproc <PID процесса>                                                              - завершить просцесс')
     print(f'>>> rproc <название процесса>                                                         - запуск процесса <название процесса>')
-    print_red('-'*w)
 def run_script():
     sentences = []
     stop_word = com1
